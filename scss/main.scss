@@ -1,0 +1,76 @@
+// variables
+
+$paddings: 30px;
+
+// mi operacion
+
+header{
+
+    padding: $paddings*2;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+}
+
+// mi extend
+
+.seccion-2{
+
+    @extend header;
+
+    background-color: bisque;
+
+    color: aliceblue;
+}
+
+// mi mixing
+
+@mixin padding ($izquierda, $derecha) {
+
+    
+    padding-left: $izquierda;
+
+    padding-right: $derecha;
+
+
+}
+
+.seccion{
+
+    @include padding(25px, 40px )
+}
+
+// mi mapa
+
+$titulos: (
+
+    titulo-1: green,
+
+    titulo-2:  blue,
+
+    titulo-3: yellow,
+
+    titulo-4: rgb(78, 55, 23),
+
+    titulo-5: brown,
+
+);
+
+@each $tit, $color in $titulos {
+
+
+        .tit-#{$tit} {
+
+            color: $color;
+
+        }
+}
+
+h2, h3, h4, h5{
+
+    @extend header;
+}

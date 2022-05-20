@@ -1,0 +1,28 @@
+header, .seccion-2, h2, h3, h4, h5 {
+  padding: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.seccion-2 {
+  background-color: bisque;
+  color: aliceblue; }
+
+.seccion {
+  padding-left: 25px;
+  padding-right: 40px; }
+
+.tit-titulo-1 {
+  color: green; }
+
+.tit-titulo-2 {
+  color: blue; }
+
+.tit-titulo-3 {
+  color: yellow; }
+
+.tit-titulo-4 {
+  color: #4e3717; }
+
+.tit-titulo-5 {
+  color: brown; }
